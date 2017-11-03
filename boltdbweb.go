@@ -45,8 +45,8 @@ func usage(appName, version string) {
 
 func init() {
 	// Read the static path from the environment if set.
-	dbName = os.Getenv("BOLTDBWEB_DB_NAME")
-	port = os.Getenv("BOLTDBWEB_PORT")
+	dbName = "test.db"
+	port = os.Getenv("PORT")
 	staticPath = os.Getenv("BOLTDBWEB_STATIC_PATH")
 	// Use default values if environment not set.
 	if staticPath == "" {
