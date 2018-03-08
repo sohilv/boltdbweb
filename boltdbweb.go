@@ -107,8 +107,7 @@ func main() {
 		})
 	})
 
-	r.GET("/", boltbrowserweb.Index)
-
+	
 	r.GET("/buckets", boltbrowserweb.Buckets)
 	r.POST("/createBucket", boltbrowserweb.CreateBucket)
 	r.POST("/put", boltbrowserweb.Put)
