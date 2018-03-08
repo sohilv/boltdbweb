@@ -98,7 +98,7 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-
+ -	r.GET("/", boltbrowserweb.Index) 
 	// OK, we should be ready to define/run web server safely.
 	r := gin.Default()
 	r.GET("/ping", func(c *gin.Context) {
