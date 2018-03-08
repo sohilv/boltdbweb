@@ -11,7 +11,7 @@ var Db *bolt.DB
 
 func Index(c *gin.Context) {
 
-	c.Redirect(301, "/web/html/layout.html")
+	c.Redirect(302, "/web/html/layout.html")
 
 }
 
